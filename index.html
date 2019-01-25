@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title></title>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0″/>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <div id="navbar">
+        <a><i class="fas fa-phone"></i> (06)--- --- --</a>
+        <a><i class="fab fa-whatsapp"></i> (06)--- --- --</a>
+        <a><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</a>
+        <a><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter-square"></i> </a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa fa-bars"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a><i class="fas fa-phone"></i> (06)--- --- --</a>
+                <a><i class="fab fa-whatsapp"></i> (06)--- --- --</a>
+                <a><i class="far fa-clock"></i> Ma - Zo: 8:00 - 22:00</a>
+                <a><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a><i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-twitter-square"></i>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+    
+    <div id="navbar2">
+        <div>
+            <img src="img/logo.png" class="logo">
+        </div>
+        <div class="info">
+            <a>Autorijbewijs <i class="fas fa-sort-down"></i></a>
+            <a>Motorrijbewijs <i class="fas fa-sort-down"></i></a>
+            <a>Theorieles</a>
+            <a>Opfris Cursus</a>
+            <a>Contact</a>
+            <div id="dropdown2">
+                <button onclick="myFunction2()" class="dropbtn2"><i class="fa fa-bars"></i></button>
+                <div id="myDropdown2" class="dropdown-content2">
+                    <a>Autorijbewijs <i class="fas fa-sort-down"></i></a>
+                    <a>Motorrijbewijs <i class="fas fa-sort-down"></i></a>
+                    <a>Theorieles</a>
+                    <a>Opfris Cursus</a>
+                    <a>Contact</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---->
+    <div id="banner">
+        <img src="img/banner.jpg"></img>
+    </div>
+    
+    <!---->
+    
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn2')) {
+                var dropdowns2 = document.getElementsByClassName("dropdown-content2");
+                var i;
+                for (i = 0; i < dropdowns2.length; i++) {
+                    var openDropdown2 = dropdowns2[i];
+                    if (openDropdown2.classList.contains('show2')) {
+                        openDropdown2.classList.remove('show2');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
