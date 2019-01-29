@@ -1,15 +1,17 @@
 body {
     margin: 0;
+}
 
+a {
+    color: #545454;
 }
 
 #navbar {
     background-color: limegreen;
     text-align: left;
-    padding: 0;
 }
 
-a {
+#navbar > a {
     display: none;
 }
 
@@ -24,7 +26,6 @@ a {
     background-color: white;
     display: none;
     position: absolute;
-    overflow: auto;
     border-left: solid limegreen 2px;
 }
 
@@ -39,12 +40,12 @@ a {
 
 .banner {
     width: 100%;
-    height: 50%;
 }
 
 .logo {
-    width: 100px;
+    width: 8em;
     position: relative;
+    float: right;
 }
 
 .dropbtn2 {
@@ -59,7 +60,6 @@ a {
     background-color: white;
     display: none;
     position: absolute;
-    overflow: auto;
     border-left: solid limegreen 2px;
 }
 
@@ -70,6 +70,37 @@ a {
 
 .show2 {
     display: block;
+}
+
+#navbar2 > a {
+    display: none;
+}
+
+#info {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.info-headline {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.video {
+    display: block;
+    margin: 0 auto;
+    height: 25%;
+    width: 50%;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: limegreen;
+    text-align: center;
+    margin-top: 2em;
+    padding-top: 2em;
 }
 
 @media only screen and (min-width: 900px) {
@@ -85,6 +116,10 @@ a {
         width: 100%;
     }
 
+    #navbar > a {
+        display: inline;
+    }
+
     a {
         display: inline;
         padding: 11px;
@@ -96,37 +131,51 @@ a {
         display: none;
     }
 
-    #banner {
+    .banner {
         width: 100%;
-        height: 50%;
-        left: 0;
-        position: absolute;
+        position: relative;
     }
 
     .logo {
         width: 350px;
         position: relative;
         margin-left: 5%;
+        margin-top: 3em;
+        float: left;
     }
 
-    .info {
-        margin-top: -55px;
-        float: right;
-        margin-right: 50px;
-        padding: 10px;
-    }
-
-    .info a{
+    #navbar2 a{
         color: #545454;
         padding: 10px;
-        margin: 20px;
-    }
-
-    .navbar2 {
-        background-color: white;
+        margin-top: 3em;
+        display: inline-block;
     }
 
     .dropdown-content2, .dropbtn2 {
         display: none;
+    }
+
+    #info{
+        width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 1;
+    }
+
+    .video {
+        display: block;
+        margin: 0 auto;
+        height: 50%;
+        width: 50%;
+    }
+
+    footer {
+        height: 50px;
+        width: 100%;
+        background-color: limegreen;
+        text-align: center;
+        margin-top: 2em;
+        padding-top: 2em;
     }
 }
